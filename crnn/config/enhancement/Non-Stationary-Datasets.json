@@ -1,0 +1,17 @@
+{
+    "experiments_dir": "/Work19/2019/nabil/crnn/Experiments/SA-SE/SA-SE-CRN-Baseline/",
+    "enhancement_dir": "/Work19/2019/nabil/crnn/enh",
+    "model": {
+        "module": "model.crn_in_paper_batch_norm",
+        "main": "CRNN",
+        "args": {}
+    },
+    "dataset": {
+        "module": "dataset.wav_dataset_enhancement",
+        "main": "WavDataset",
+        "args": {
+            "mixture_dataset": "/Work19/2019/nabil/reverb_data/tt/mix",
+            "limit": 2000
+        }
+    }
+}
